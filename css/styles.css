@@ -1,0 +1,59 @@
+/* #region FONTS */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../css/fonts/Gilroy-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../css/fonts/Gilroy-Medium.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../css/fonts/Gilroy-Semibold.woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../css/fonts/Gilroy-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+/* #endregion FONTS */
+
+/* #region ALL Settings */
+body {
+  font-family: "Gilroy", sans-serif;
+  color: rgba(12, 12, 12, 0.7);
+  background-color: #fbfbff;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+/* #endregion ALL Settings */
+
+/* #region Header */
+.header-logo {
+}
+.header-nav {
+}
+.header-nav-list {
+}
+.header-nav-item {
+}
+.header-social-list {
+}
+.header-social-item {
+}
+.header-social-link {
+}
+
+/* #endregion Header */
