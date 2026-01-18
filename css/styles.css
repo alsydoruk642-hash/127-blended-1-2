@@ -42,12 +42,24 @@ ol {
 
 /* #region Header */
 .header-logo {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
 }
 .header-nav {
 }
 .header-nav-list {
+  font-weight: 500;
+  font-size: 14px;
+
+  /* line-height: 18px; */
+  line-height: 1.28571;
 }
 .header-nav-item {
+}
+.header-nav-link {
+  color: #0c0c0c;
 }
 .header-social-list {
 }
@@ -55,5 +67,19 @@ ol {
 }
 .header-social-link {
 }
-
 /* #endregion Header */
+
+/* #region HERO */
+.main {
+}
+.hero {
+}
+.hero-title {
+}
+.hero-title-part {
+}
+.hero-descr {
+}
+.hero-link {
+}
+/* #endregion HERO */
