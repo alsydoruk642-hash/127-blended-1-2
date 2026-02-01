@@ -392,27 +392,33 @@
       <!-- #endregion Reviews -->
 
       <!-- #region Contact Us -->
-      <h2 class="contact-title">Contact Us</h2>
-
-      <form>
-        <p class="form-descr">
-          Please use the form below to contact us. Enter your name, email,
-          phone, and message and we'll get back to you shortly.
-        </p>
-        <input class="input-descr" type="text" placeholder="Name" />
-        <input class="input-descr" type="email" placeholder="Email" />
-        <input class="input-descr" type="tel" placeholder="+380" />
-        <textarea class="input-descr" placeholder="Comment"></textarea>
-
-        <button class="form-btn" type="submit">Send</button>
-      </form>
-
-      <img
-        src="./images/sec-contact/contact-image.png"
-        alt="image watch"
-        width="530"
-        height="556"
-      />
+      <section class="contact section container">
+        <h2 class="contact-title">Contact Us</h2>
+        <div class="contact-container">
+          <div class="contact-from-container">
+            <p class="form-descr">
+              Please use the form below to contact us. Enter your name, email,
+              phone, and message and we'll get back to you shortly.
+            </p>
+            <form class="contact-form">
+              <input class="input-descr" type="text" placeholder="Name" />
+              <input class="input-descr" type="email" placeholder="Email" />
+              <input class="input-descr" type="tel" placeholder="+380" />
+              <textarea
+                class="input-descr-comment"
+                placeholder="Comment"
+              ></textarea>
+            </form>
+            <button class="form-btn" type="submit">Send</button>
+          </div>
+          <img
+            src="./images/sec-contact/contact-image.png"
+            alt="image watch"
+            width="530"
+            height="556"
+          />
+        </div>
+      </section>
 
       <!-- #endregion Contact Us -->
     </main>
