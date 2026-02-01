@@ -218,6 +218,11 @@ img {
   min-height: 48px;
   border-radius: 16px;
   border: none;
+  transition: background-color 250ms;
+}
+.about-btn:hover,
+.about-btn:focus {
+  background-color: #1f3cd4;
 }
 /* #endregion About Us */
 
