@@ -606,13 +606,12 @@ img {
 
 /* #region Footer */
 .footer {
+  padding-top: 50px;
+}
+.footer .container {
   background-color: #0c0c0c;
   border-radius: 30px;
   padding: 40px 40px 28px;
-}
-.section {
-}
-.container {
 }
 .footer-top-wrapper {
   display: flex;
