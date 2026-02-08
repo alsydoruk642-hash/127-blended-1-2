@@ -467,50 +467,103 @@ img {
 /* #endregion About Us Desktop */
 
 /* #region CATALOG Mobile */
-/* #endregion CATALOG Mobile */
-/* #region CATALOG Tablet */
-/* #endregion CATALOG Tablet */
-/* #region CATALOG Desktop */
 .catalog {
 }
-.catalog-list {
-  display: flex;
-  gap: 32px 23px;
-  flex-wrap: wrap;
+.container {
+}
+.catalog-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+.catalog-list-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .catalog-list-item {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   background-color: #f3f3f3;
-  width: calc((100% - 2 * 23px) / 3);
-  padding: 24px 32px;
+  padding: 24px 28px;
 }
-.catalog-title {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 0.91;
-  letter-spacing: -0.02em;
-  color: #0c0c0c;
-  margin-bottom: 40px;
+.catalog-list-img {
 }
 .catalog-descr-name {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 1.25;
   letter-spacing: -0.02em;
   color: #0c0c0c;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin-top: 10px;
   margin-bottom: 8px;
 }
 .catalog-descr-price {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.5);
+}
+.mobile-catalog-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fbfbfb;
+  border-radius: 16px;
+  background-color: #3350e9;
+  width: 160px;
+  height: 48px;
+  border: none;
+  margin: 40px auto 0;
+  display: block;
+}
+.mobile-catalog-btn:hover,
+.mobile-catalog-btn:focus {
+  background-color: #1f3cd4;
+}
+/* #endregion CATALOG Mobile */
+/* #region CATALOG Tablet */
+@media screen and (min-width: 768px) {
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+    margin: 0 auto;
+  }
+  .catalog-list-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .catalog-title {
+    font-size: 48px;
+    line-height: 0.91;
+    margin-bottom: 40px;
+  }
+  .catalog-list-item {
+    padding: 24px 32px;
+    width: calc((100% - 16px) / 2);
+  }
+  .catalog-descr-name {
+    font-size: 20px;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .mobile-catalog-btn {
+    display: none;
+  }
+}
+/* #endregion CATALOG Tablet */
+/* #region CATALOG Desktop */
+@media screen and (min-width: 1158px) {
+  .catalog-list {
+    gap: 32px 23px;
+  }
+  .catalog-list-item {
+    width: calc((100% - 2 * 23px) / 3);
+  }
 }
 /* #endregion CATALOG Desktop */
 
