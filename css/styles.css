@@ -253,7 +253,16 @@ img {
 .hero-link:focus {
   color: #3350e9;
 }
+.hero-image-box {
+  width: 335px;
+  height: 366px;
+}
 .hero-image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+/* .hero-image {
   width: 100%;
   height: 336px;
   background-image: url("../images/sec-hero/hero-watch-mobile.jpg");
@@ -262,7 +271,7 @@ img {
   background-repeat: no-repeat;
   border-radius: 10%;
   margin: 0 auto;
-}
+} */
 /* #endregion HERO Mobile */
 /* #region HERO Tablet */
 @media screen and (min-width: 768px) {
@@ -296,7 +305,12 @@ img {
     font-size: 20px;
     line-height: 1;
   }
-  .hero-image {
+  .hero-image-box {
+    width: 704px;
+    height: 520px;
+  }
+
+  /* .hero-image {
     width: 100%;
     height: 520px;
     background-image: url("../images/sec-hero/hero-watch-tablet.jpg");
@@ -304,7 +318,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 7%;
-  }
+  } */
 }
 /* #endregion HERO Tablet */
 /* #region HERO Desktop */
@@ -321,7 +335,11 @@ img {
   .hero-descr {
     max-width: 480px;
   }
-  .hero-image {
+  .hero-image-box {
+    width: 1150px;
+    height: 500px;
+  }
+  /* .hero-image {
     width: 1150px;
     height: 500px;
     background-image: url("../images/sec-hero/hero-watch-desktop.jpg");
@@ -329,35 +347,28 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 0;
-  }
+  } */
 }
 /* #endregion HERO Desktop */
 
 /* #region About Us Mobile */
-/* #endregion About Us Mobile */
-/* #region About Us Tablet */
-/* #endregion About Us Tablet */
-/* #region About Us Desktop */
 .about-us {
 }
-.about-us .container {
-  display: flex;
-  gap: 40px;
+.container {
 }
-
 .about-container {
-  max-width: 580px;
   background-color: #f3f3f3;
-  border-radius: 50px;
-  padding: 80px 60px;
+  padding: 40px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
 }
 .about-title {
   font-weight: 600;
-  font-size: 48px;
-  line-height: 0.91667;
+  font-size: 32px;
+  line-height: 1;
   letter-spacing: -0.02em;
   color: #0c0c0c;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 .about-list {
   display: flex;
@@ -367,10 +378,10 @@ img {
 }
 .about-item {
 }
-
 .about-descr {
   font-weight: 500;
-  line-height: 1.25;
+  font-size: 14px;
+  line-height: 1.28;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
 }
@@ -391,6 +402,68 @@ img {
 .about-btn:focus {
   background-color: #1f3cd4;
 }
+/* #endregion About Us Mobile */
+/* #region About Us Tablet */
+@media screen and (min-width: 768px) {
+  .about-container {
+    padding: 80px 60px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+  }
+  .about-title {
+    font-size: 48px;
+    line-height: 0.91;
+    margin-bottom: 40px;
+  }
+  .about-list {
+    margin-bottom: 60px;
+  }
+  .about-item {
+  }
+  .about-descr {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .about-btn {
+  }
+  .about-image {
+    width: 100%;
+  }
+}
+/* #endregion About Us Tablet */
+/* #region About Us Desktop */
+@media screen and (min-width: 1158px) {
+  .about-us .container {
+    display: flex;
+    gap: 40px;
+  }
+  .about-container {
+    max-width: 580px;
+    padding: 80px 60px;
+    margin-bottom: 0;
+  }
+  .about-list {
+    margin-bottom: 40px;
+  }
+}
+/* 
+.about-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fbfbfb;
+  background-color: #3350e9;
+  min-width: 160px;
+  min-height: 48px;
+  border-radius: 16px;
+  border: none;
+  transition: background-color 250ms;
+}
+.about-btn:hover,
+.about-btn:focus {
+  background-color: #1f3cd4;
+} */
 /* #endregion About Us Desktop */
 
 /* #region CATALOG Mobile */

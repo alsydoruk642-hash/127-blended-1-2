@@ -101,7 +101,23 @@
                 <a class="hero-link" href="#footer">Scroll down</a>
               </div>
             </div>
-            <div class="hero-image"></div>
+            <picture class="hero-image-box">
+              <source
+                srcset="./images/sec-hero/hero-watch-desktop.jpg"
+                media="(min-width: 1158px)"
+               />
+              <source
+                srcset="./images/sec-hero/hero-watch-tablet.jpg"
+                media="(min-width: 768px)"
+              /> 
+              <source srcset="./images/sec-hero/hero-watch-mobile.jpg"
+              />
+              <img
+                 class="hero-image"
+                  src="./images/sec-hero/hero-watch-mobile.jpg"
+                  alt="image-hero"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -133,7 +149,7 @@
             </ul>
             <button class="about-btn" type="button">View catalog</button>
           </div>
-          <img
+          <img class="about-image"
             src="./images/sec-about/about-image.jpg"
             alt="watch-image-about"
             width="530"
