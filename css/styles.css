@@ -55,7 +55,7 @@ button {
 }
 .container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 375px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -65,12 +65,34 @@ img {
   height: auto;
 }
 .section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1180px;
+  }
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 /* #endregion ALL Settings */
 
-/* #region Header */
+/* #region Header Mobile */
+/* #endregion Header Mobile */
+/* #region Header Tablet */
+/* #endregion Header Tablet */
+/* #region Header Desktop */
 .header {
   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
 }
@@ -98,11 +120,15 @@ img {
 }
 .header-nav-item {
 }
-.current {
+
+.header-nav-link {
+  display: block;
+  padding: 30px 0;
+  color: #0c0c0c;
   position: relative;
-  border-radius: 100%;
+  transition: transform 250ms;
 }
-.current::after {
+.header-nav-link:hover::after {
   content: " ";
   border-radius: 100%;
   position: absolute;
@@ -113,12 +139,6 @@ img {
   bottom: 15px;
   transform: translateX(-50%);
 }
-.header-nav-link {
-  display: block;
-  padding: 30px 0;
-  color: #0c0c0c;
-}
-
 .header-social-list {
   display: flex;
   gap: 10px;
@@ -133,16 +153,22 @@ img {
     fill 250ms,
     border-color 250ms;
 }
-.header-social-item:hover,
-.header-social-item:focus {
-  border: 1px solid rgba(51, 80, 233, 0.1);
+
+.header-social-link {
+  display: block;
+}
+.header-social-link:hover,
+.header-social-link:focus {
   fill: #3350e9;
 }
-.header-social-link {
-}
-/* #endregion Header */
 
-/* #region HERO */
+/* #endregion Header Desktop */
+
+/* #region HERO Mobile */
+/* #endregion HERO Mobile */
+/* #region HERO Tablet */
+/* #endregion HERO Tablet */
+/* #region HERO Desktop */
 
 .hero {
   padding-top: 80px;
@@ -197,9 +223,13 @@ img {
   color: #3350e9;
 }
 
-/* #endregion HERO */
+/* #endregion HERO Desktop */
 
-/* #region About Us */
+/* #region About Us Mobile */
+/* #endregion About Us Mobile */
+/* #region About Us Tablet */
+/* #endregion About Us Tablet */
+/* #region About Us Desktop */
 .about-us {
 }
 .about-us .container {
@@ -253,9 +283,13 @@ img {
 .about-btn:focus {
   background-color: #1f3cd4;
 }
-/* #endregion About Us */
+/* #endregion About Us Desktop */
 
-/* #region CATALOG */
+/* #region CATALOG Mobile */
+/* #endregion CATALOG Mobile */
+/* #region CATALOG Tablet */
+/* #endregion CATALOG Tablet */
+/* #region CATALOG Desktop */
 .catalog {
 }
 .catalog-list {
@@ -297,9 +331,13 @@ img {
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.5);
 }
-/* #endregion CATALOG */
+/* #endregion CATALOG Desktop */
 
-/* #region Advertisement  */
+/* #region Advertisement Mobile  */
+/* #endregion Advertisement Mobile  */
+/* #region Advertisement Tablet  */
+/* #endregion Advertisement Tablet  */
+/* #region Advertisement Desktop  */
 .advertisement {
 }
 .advertisement .container {
@@ -342,9 +380,13 @@ img {
   background-color: #fbfbfb;
   color: #0c0c0c;
 }
-/* #endregion Advertisement  */
+/* #endregion Advertisement Desktop  */
 
-/* #region SALE */
+/* #region SALE Mobile */
+/* #endregion SALE Mobile */
+/* #region SALE Tablet */
+/* #endregion SALE Tablet */
+/* #region SALE Desktop */
 .sale {
 }
 .sale-container {
@@ -464,9 +506,13 @@ img {
   line-height: 1.28571;
   color: #fbfbfb;
 }
-/* #endregion SALE */
+/* #endregion SALE Desktop */
 
-/* #region REVIEWS */
+/* #region REVIEWS Mobile */
+/* #endregion REVIEWS Mobile */
+/* #region REVIEWS Tablet */
+/* #endregion REVIEWS Tablet */
+/* #region REVIEWS Desktop */
 .reviews {
 }
 .reviews-title {
@@ -513,9 +559,13 @@ img {
   text-align: center;
   color: rgba(12, 12, 12, 0.4);
 }
-/* #endregion REVIEWS */
+/* #endregion REVIEWS Desktop */
 
-/* #region CONTACT */
+/* #region CONTACT Mobile */
+/* #endregion CONTACT Mobile */
+/* #region CONTACT Tablet */
+/* #endregion CONTACT Tablet */
+/* #region CONTACT Desktop */
 .contact-section {
 }
 .contact-title {
@@ -602,9 +652,13 @@ img {
 .form-btn:active {
   background-color: #1f3cd4;
 }
-/* #endregion CONTACT */
+/* #endregion CONTACT Desktop */
 
-/* #region Footer */
+/* #region Footer Mobile */
+/* #endregion Footer Mobile */
+/* #region Footer Tablet */
+/* #endregion Footer Tablet */
+/* #region Footer Desktop */
 .footer {
   padding-top: 50px;
 }
@@ -629,6 +683,7 @@ img {
 }
 .footer-social-list {
   display: flex;
+  gap: 10px;
 }
 .footer-social-item {
   border: 1px solid rgba(251, 251, 251, 0.1);
@@ -636,15 +691,16 @@ img {
   padding: 8px;
   width: 36px;
   height: 36px;
+}
+
+.footer-social-link {
   opacity: 0.5;
   fill: #fbfbfb;
   transition: opacity 250ms;
 }
-.footer-social-item:hover,
-.footer-social-item:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   opacity: 1;
-}
-.footer-social-link {
 }
 .footer-social-icon {
 }
@@ -675,13 +731,17 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #fbfbfb;
+  opacity: 0.5;
+  transition: opacity 250ms;
+}
+.footer-tel-link:hover,
+.footer-tel-link:focus {
+  opacity: 1;
 }
 .footer-middle-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 28px;
-}
-.footer-navigation {
 }
 .footer-navigation-list {
   display: flex;
@@ -695,6 +755,19 @@ img {
   line-height: 1.28571;
   text-align: center;
   color: #fbfbfb;
+  position: relative;
+}
+.footer-navigation-link:hover::after,
+.footer-navigation-link:focus::after {
+  content: " ";
+  border-radius: 100%;
+  position: absolute;
+  background-color: #fbfbff;
+  width: 8px;
+  height: 8px;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
 }
 .footer-adress {
   max-width: 162px;
@@ -704,6 +777,12 @@ img {
   font-size: 14px;
   line-height: 1.28571;
   color: #fbfbfb;
+  opacity: 0.5;
+  transition: opacity 250ms;
+}
+.footer-adress-link:hover,
+.footer-adress-link:focus {
+  opacity: 1;
 }
 .footer-line {
   stroke-width: 1px;
@@ -739,4 +818,4 @@ img {
   text-align: right;
   color: rgba(251, 251, 251, 0.5);
 }
-/* #endregion Footer */
+/* #endregion Footer Desktop */
