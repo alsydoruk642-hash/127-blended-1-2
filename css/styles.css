@@ -944,58 +944,45 @@ img {
     gap: 20px;
   }
   .card-container {
-    height: 272px;
     width: calc((100% - 2 * 20px) / 3);
   }
   .reviews-card-descr {
   }
 }
-
-/* 
-.reviews-container {
-  display: flex;
-  gap: 20px;
-}
-
-.card-container {
-  border-radius: 30px;
-  padding: 32px 36px;
-  width: 370px;
-  height: 272px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  background-color: #f3f3f3;
-  width: calc((100% - 2 * 20) / 3);
-}
-.card-descr-container {
-}
-.reviews-card-name {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: #0c0c0c;
-  margin-bottom: 8px;
-}
-.reviews-card-descr {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: rgba(12, 12, 12, 0.4);
-} */
 /* #endregion REVIEWS Desktop */
 
 /* #region CONTACT Mobile */
+.contact {
+}
+.section {
+}
+.container {
+}
+.contact-title {
+}
+.contact-container {
+}
+.contact-from-container {
+}
+.form-descr {
+}
+.contact-form {
+}
+.input-descr {
+}
+.input-descr-comment {
+}
+.form-btn {
+}
 /* #endregion CONTACT Mobile */
+@media screen and (min-width: 768px) {
+}
 /* #region CONTACT Tablet */
 /* #endregion CONTACT Tablet */
 /* #region CONTACT Desktop */
-.contact-section {
+@media screen and (min-width: 1158px) {
+}
+/* .contact-section {
 }
 .contact-title {
   font-weight: 600;
@@ -1080,7 +1067,7 @@ img {
 .form-btn:focus,
 .form-btn:active {
   background-color: #1f3cd4;
-}
+} */
 /* #endregion CONTACT Desktop */
 
 /* #region Footer Mobile */
