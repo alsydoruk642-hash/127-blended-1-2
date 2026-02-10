@@ -262,7 +262,7 @@ img {
   display: block;
   height: auto;
 }
-/* .hero-image {
+.hero-image {
   width: 100%;
   height: 336px;
   background-image: url("../images/sec-hero/hero-watch-mobile.jpg");
@@ -271,7 +271,7 @@ img {
   background-repeat: no-repeat;
   border-radius: 10%;
   margin: 0 auto;
-} */
+}
 /* #endregion HERO Mobile */
 /* #region HERO Tablet */
 @media screen and (min-width: 768px) {
@@ -311,7 +311,7 @@ img {
     height: 520px;
   }
 
-  /* .hero-image {
+  .hero-image {
     width: 100%;
     height: 520px;
     background-image: url("../images/sec-hero/hero-watch-tablet.jpg");
@@ -319,7 +319,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 7%;
-  } */
+  }
 }
 /* #endregion HERO Tablet */
 /* #region HERO Desktop */
@@ -340,7 +340,7 @@ img {
     width: 1150px;
     height: 500px;
   }
-  /* .hero-image {
+  .hero-image {
     width: 1150px;
     height: 500px;
     background-image: url("../images/sec-hero/hero-watch-desktop.jpg");
@@ -348,7 +348,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 0;
-  } */
+  }
 }
 /* #endregion HERO Desktop */
 
@@ -724,6 +724,7 @@ img {
   background-color: rgba(251, 251, 251, 0.1);
   width: 68px;
   height: 32px;
+  margin-right: 9px;
 }
 .sale-price-old {
   font-weight: 400;
@@ -734,19 +735,38 @@ img {
   color: rgba(251, 251, 251, 0.5);
 }
 .sale-descr-about {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.7);
+  margin-bottom: 28px;
 }
 .sale-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .sale-info-item {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  max-width: 128px;
+  max-height: 32px;
 }
 .sale-info-descr {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #fbfbfb;
+  white-space: nowrap;
 }
 /* #endregion SALE Mobile */
 /* #region SALE Tablet */
 @media screen and (min-width: 768px) {
   .sale-title {
     font-size: 48px;
-    line-height: 0.91667;
+    line-height: 0.91;
     margin-bottom: 40px;
   }
   .image-container {
@@ -766,6 +786,7 @@ img {
   .sale-image-list-item {
     padding: 16px 18px;
   }
+
   .big-image-container {
     margin-bottom: 0px;
     padding: 80px 112px;
@@ -779,150 +800,158 @@ img {
   }
   .sale-title-info {
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 1.12;
+  }
+  .sale-price-container {
+    margin-bottom: 30px;
+  }
+  .sale-price-new {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .sale-descr-about {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 40px;
+  }
+  .sale-info-list {
+    max-width: 398px;
+  }
+  .sale-info-item {
+    max-width: 145px;
+    max-height: 34px;
+  }
+  .sale-info-descr {
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 /* #endregion SALE Tablet */
 /* #region SALE Desktop */
 @media screen and (min-width: 1158px) {
+  .sale-container {
+    display: flex;
+  }
+  .small-image-container {
+    margin-right: 20px;
+  }
+  .sale-image-list-item {
+    width: 132px;
+    height: 132px;
+  }
+  .big-image-container {
+    width: 428px;
+    height: 558px;
+    padding: 80px 50px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sale-info-container {
+    max-width: 530px;
+    max-height: 558px;
+  }
 }
 
-/* .sale {
-}
-.sale-container {
-  display: flex;
-}
-.sale-title {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 0.91;
-  letter-spacing: -0.02em;
-  color: #0c0c0c;
-  margin-bottom: 40px;
-}
-.small-image-container {
-  margin-right: 20px;
-}
-.sale-image-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.sale-image-list-item {
-  background-color: #f3f3f3;
-  width: 132px;
-  height: 132px;
-  border: 1px solid rgba(12, 12, 12, 0.05);
-  border-radius: 20px;
-  padding: 16px 18px;
-}
-.big-image-container {
-  border: 1px solid rgba(12, 12, 12, 0.05);
-  border-radius: 50px;
-  width: 428px;
-  height: 558px;
-  background-color: #f3f3f3;
-  margin-right: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sale-info-container {
-  background-color: #3350e9;
-  border-radius: 50px;
-  width: 530px;
-  height: 558px;
-  padding: 60px;
-}
-.sale-header {
-}
-.sale-title-info {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
-  color: #fbfbfb;
-  margin-bottom: 10px;
-}
-.sale-descr-tag {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.02em;
-  color: rgba(251, 251, 251, 0.5);
-  margin-bottom: 20px;
-}
-.sale-price-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 12px;
-  margin-bottom: 30px;
-}
-.sale-price-new {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 78px;
-  height: 32px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: #fbfbfb;
-  border-radius: 8px;
-  background-color: #3b5bfd;
-}
-.sale-price-old {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: -0.02em;
-  text-decoration: line-through;
-  color: rgba(251, 251, 251, 0.5);
-}
-.sale-descr-about {
-  font-weight: 500;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  color: rgba(251, 251, 251, 0.7);
-  margin-bottom: 40px;
-}
-.sale-info-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.sale-info-item {
-  border: 1px solid rgba(251, 251, 251, 0.2);
-  border-radius: 8px;
-  padding: 8px 12px;
-  min-width: 64px;
-  height: 34px;
-}
-.sale-info-descr {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28571;
-  color: #fbfbfb;
-} */
 /* #endregion SALE Desktop */
 
 /* #region REVIEWS Mobile */
-/* #endregion REVIEWS Mobile */
-/* #region REVIEWS Tablet */
-/* #endregion REVIEWS Tablet */
-/* #region REVIEWS Desktop */
 .reviews {
+}
+.section {
+}
+.container {
 }
 .reviews-title {
   font-weight: 600;
-  font-size: 48px;
-  line-height: 0.91667;
+  font-size: 32px;
+  line-height: 1;
   letter-spacing: -0.02em;
   color: #0c0c0c;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card-container {
+  border-radius: 30px;
+  padding: 32px 36px;
+  max-width: 335px;
+  max-height: 262px;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-descr-container {
+}
+.reviews-card-name {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #0c0c0c;
+  margin-bottom: 8px;
+}
+.reviews-card-descr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(12, 12, 12, 0.4);
+}
+/* #endregion REVIEWS Mobile */
+/* #region REVIEWS Tablet */
+@media screen and (min-width: 768px) {
+  .reviews-title {
+    font-size: 48px;
+    line-height: 0.91;
+    margin-bottom: 40px;
+  }
+  .reviews-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-container {
+    flex-direction: column;
+    width: calc((100% - 16px) / 2);
+    max-width: none;
+  }
+  .reviews-card-name {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+  .reviews-card-descr {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+/* #endregion REVIEWS Tablet */
+/* #region REVIEWS Desktop */
+@media screen and (min-width: 1158px) {
+  .reviews-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  .card-container {
+    height: 272px;
+    width: calc((100% - 2 * 20px) / 3);
+  }
+  .reviews-card-descr {
+  }
+}
+
+/* 
 .reviews-container {
   display: flex;
   gap: 20px;
@@ -958,7 +987,7 @@ img {
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(12, 12, 12, 0.4);
-}
+} */
 /* #endregion REVIEWS Desktop */
 
 /* #region CONTACT Mobile */
