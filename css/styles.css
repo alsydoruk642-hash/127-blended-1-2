@@ -1608,4 +1608,9 @@ img {
 }
 .mobile-social-icon {
 }
+@media screen and (min-width: 768px) {
+  .mobile-navigation-list {
+    gap: 32px;
+  }
+}
 /* endregion Modal Menu */
