@@ -1203,8 +1203,8 @@ img {
   opacity: 0.5;
   transition: opacity 250ms;
 }
-.footer-adress-link:hover,
-.footer-adress-link:focus {
+.footer-address-link:hover,
+.footer-address-link:focus {
   opacity: 1;
 }
 .footer-line {
